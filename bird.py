@@ -37,7 +37,7 @@ class Run:
 
     @staticmethod
     def do(bird):
-        bird.frame = (bird.frame + FRAMES_PER_ACTION * ACTION_PER_TIME * game_framework.frame_time) % 8
+        bird.frame = (bird.frame + FRAMES_PER_ACTION * ACTION_PER_TIME * game_framework.frame_time) % 14
         bird.x += bird.dir * RUN_SPEED_PPS * game_framework.frame_time
         bird.x = clamp(25, bird.x, 1600 - 25)
         if bird.dir == 1 and bird.x > 1550:
