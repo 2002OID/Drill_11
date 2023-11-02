@@ -53,7 +53,7 @@ def run(start_mode):
         frame_time = time.time() - current_time
         frame_rate = 1.0/frame_time
         current_time += frame_time
-        print(f'Frame time :{frame_time}, Frame Rate : {frame_rate}')
+        #print(f'Frame time :{frame_time}, Frame Rate : {frame_rate}')
 
     # repeatedly delete the top of the stack
     while (len(stack) > 0):
